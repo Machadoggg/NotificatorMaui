@@ -1,8 +1,11 @@
 ﻿using SQLite;
 using System.ComponentModel.DataAnnotations;
+using ColumnAttribute = SQLite.ColumnAttribute;
+using TableAttribute = SQLite.TableAttribute;
 
 namespace Notificator
 {
+    [Table("customer")]
     public class Customer
     {
         [PrimaryKey]
